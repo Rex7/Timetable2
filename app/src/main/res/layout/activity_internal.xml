@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVioletred"
+    tools:context=".Internal">
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etinam"
+        android:layout_centerHorizontal="true"
+        android:text="Internal Details" />
+
+    <TextView
+        android:id="@+id/tvinam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvieid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etieid"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:text="E-mail Id" />
+
+    <EditText
+        android:id="@+id/etieid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="179dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etipno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etieid"
+        android:layout_marginTop="111dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_contact"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etinam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvinam"
+        android:layout_alignStart="@+id/etieid"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvicno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etipno"
+        android:layout_alignStart="@+id/tvibd"
+        android:text="Contact No" />
+
+    <EditText
+        android:id="@+id/etibno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_bank"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvibd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etibno"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:text="Bank Detail" />
+
+    <Button
+        android:id="@+id/btnisb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnibk"
+        android:layout_marginEnd="107dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnibk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        android:layout_toEndOf="@+id/tvieid"
+        android:background="@drawable/rounded_button"
+        android:text="Back" />
+
+    />
+
+</RelativeLayout>

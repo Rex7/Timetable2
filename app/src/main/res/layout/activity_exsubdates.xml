@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/colorVioletred"
+tools:context=".Exsubdates">
+
+    <TextView
+        android:id="@+id/tvsd"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvdates"
+        android:layout_marginTop="25dp"
+        android:text="Enter sub and dates" />
+
+    <TextView
+        android:id="@+id/tvsub"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etsub"
+        android:layout_toStartOf="@+id/etsub"
+        android:text="Subject" />
+
+    <EditText
+        android:id="@+id/etsub"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etdates"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvdates"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/etdates"
+        android:layout_marginStart="13dp"
+        android:text="Dates" />
+
+    <EditText
+        android:id="@+id/etdates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btndates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="209dp"
+        android:layout_toEndOf="@+id/tvsub"
+        android:background="@drawable/rounded_button"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etsub"
+        android:layout_toEndOf="@+id/tvsub"
+        android:background="@drawable/rounded_button"
+
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnbckex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btndates"
+        android:background="@drawable/rounded_button"
+        android:layout_marginEnd="77dp"
+        android:text="back" />
+
+
+</RelativeLayout>

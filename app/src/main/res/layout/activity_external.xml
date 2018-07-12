@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVioletred"
+    tools:context=".External">
+
+    <TextView
+        android:id="@+id/tvcollgn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tveid"
+        android:layout_alignLeft="@id/tveid"
+        android:layout_alignTop="@+id/etcnam"
+        android:text="College Name" />
+
+    <TextView
+        android:id="@+id/tvexn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvcollgn"
+        android:layout_alignLeft="@id/tvcollgn"
+        android:layout_alignTop="@+id/etna"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/etcnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/etpno"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etpno"
+        android:layout_marginTop="85dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eteid"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:text="External Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tved"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvcno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvcollgn"
+        android:layout_alignLeft="@id/tvcollgn"
+        android:layout_marginTop="130dp"
+        android:text="Contact no" />
+
+    <EditText
+        android:id="@+id/etpno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/etna"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etna"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_contact"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/eteid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tveid"
+        android:layout_toEndOf="@+id/btnebk"
+        android:layout_toRightOf="@id/btnebk"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tvbno"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:text="Banka/c" />
+
+    <EditText
+        android:id="@+id/etebno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etcnam"
+        android:layout_alignStart="@+id/etcnam"
+        android:drawableLeft="@drawable/ic_action_bank"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/tveid"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvbno"
+        android:layout_alignRight="@id/tvbno"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="183dp"
+        android:text="E-mail" />
+
+
+    <Button
+        android:id="@+id/btnsmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="77dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/rounded_button"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnebk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btnsmb"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back" />
+
+
+</RelativeLayout>

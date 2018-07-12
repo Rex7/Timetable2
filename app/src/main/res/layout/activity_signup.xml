@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVioletred"
+    tools:context=".Signup">
+
+    <EditText
+        android:id="@+id/etpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnReg"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:inputType="textPersonName"
+        tools:text="username" />
+
+
+    <EditText
+        android:id="@+id/etsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etpo"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="name" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#000"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/tvrsign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:text="Signup" />
+
+    <TextView
+        android:id="@+id/tvsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etsname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvrusern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvsubject"
+        android:layout_marginTop="124dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/tvmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvsubject"
+        android:layout_marginTop="199dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etspass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etpo"
+        android:layout_alignTop="@+id/tvmarks"
+        android:ems="10"
+        android:hint="password"
+        android:drawableLeft="@drawable/ic_action_pass"
+
+        android:inputType="textPassword"
+        tools:text="password" />
+
+    <Button
+        android:id="@+id/btnbcksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnReg"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#000"
+        android:text="back" />
+
+
+</RelativeLayout>

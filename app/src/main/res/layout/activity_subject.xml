@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVioletred"
+    tools:context=".Subject">
+
+    <EditText
+        android:id="@+id/etpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnReg"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:text="P/O" />
+
+
+    <EditText
+        android:id="@+id/etsname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etpo"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="name" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/rounded_button"
+        android:layout_marginStart="134dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/tvrsubl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="19dp"
+        android:text="subject" />
+
+    <TextView
+        android:id="@+id/tvsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etsname"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:text="subject" />
+
+    <TextView
+        android:id="@+id/tvpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvsubject"
+        android:layout_marginTop="124dp"
+        android:text="practical/oral" />
+
+    <TextView
+        android:id="@+id/tvmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvsubject"
+        android:layout_marginTop="199dp"
+        android:text="marks" />
+
+    <EditText
+        android:id="@+id/etmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etpo"
+        android:layout_alignTop="@+id/tvmarks"
+        android:ems="10"
+        android:inputType="textPassword|number"
+        tools:text="number" />
+
+    <Button
+        android:id="@+id/btnbcksu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etpo"
+        android:layout_alignTop="@+id/btnReg"
+        android:background="@drawable/rounded_button"
+        android:text="back" />
+
+
+</RelativeLayout>

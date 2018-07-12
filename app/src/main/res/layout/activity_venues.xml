@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVioletred"
+    tools:context=".Venues"
+    >
+
+
+    <TextView
+        android:id="@+id/tvlc"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvlc"
+        android:layout_marginTop="88dp"
+        android:text="Class\Lab" />
+
+    <TextView
+        android:id="@+id/tvRoomno"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etlab"
+        android:layout_alignStart="@+id/tvlc"
+        android:text="RoomNo" />
+
+    <EditText
+        android:id="@+id/etlab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvlc"
+        android:layout_width="65dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/rgBack1"
+        android:layout_marginStart="36dp"
+        android:text="Lab/Class" />
+
+    <RadioGroup
+        android:id="@+id/rglc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="206dp"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab" />
+
+        <RadioButton
+            android:id="@+id/rbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnvsb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="141dp"
+        android:layout_toEndOf="@+id/tvlc"
+        android:background="@drawable/rounded_button"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnbckv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnvsb"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="62dp"
+        android:background="@drawable/rounded_button"
+        android:text="Back" />
+
+
+</RelativeLayout>
