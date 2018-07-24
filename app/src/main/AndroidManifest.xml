@@ -31,7 +31,7 @@
         <activity android:name=".Venues" />
         <activity android:name=".Converter" />
         <activity android:name=".Schedule" />
-        <activity android:name=".sche"></activity>
+        <activity android:name=".Sche"></activity>
     </application>
 
 </manifest>

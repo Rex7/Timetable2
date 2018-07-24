@@ -2,7 +2,9 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorVioletred">#11f2ce</color>
-    <color name="btnColor">#FFA500</color>
+    <color name="colorAccent">#ff0057</color>
+    <color name="colorVioletred">#ffffff</color>
+    <color name="buttonColor">#051d7e</color>
+    <color name="mycustomcolor">#ffffff</color>
+
 </resources>

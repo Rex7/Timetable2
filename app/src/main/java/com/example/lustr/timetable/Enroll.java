@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Enroll extends AppCompatActivity  {
-    Button btnbatch, btnEx, btnint, btnsubject,btnven;
+    Button btnbatch, btnEx, btnint, btnsubject,btnven,buttoback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class Enroll extends AppCompatActivity  {
         btnint = (Button) findViewById(R.id.btnint);
         btnven = (Button) findViewById(R.id.btnven);
         btnsubject =(Button)findViewById(R.id.btnsubject);
+        buttoback = (Button) findViewById(R.id.buttoback);
 
 
         btnbatch.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +26,16 @@ public class Enroll extends AppCompatActivity  {
             public void onClick(View v) {
                 if (v.getId() == R.id.btnbatch) {
                     Intent intent = new Intent(Enroll.this, Student.class);
+                    startActivity(intent);
+
+
+                }
+            } });
+        buttoback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.buttoback) {
+                    Intent intent = new Intent(Enroll.this, Vip.class);
                     startActivity(intent);
 
 

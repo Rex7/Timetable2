@@ -13,26 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/rounded_button"
         android:text="Schedule" />
 
+
     <Button
-        android:id="@+id/btnex"
+        android:id="@+id/report_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@drawable/rounded_button"
-        android:text="External" />
-
-    <Button
-        android:id="@+id/btnint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="123dp"
-        android:background="@drawable/rounded_button"
-        android:text="Internal" />
+        android:text="Report" />
 
 </RelativeLayout>

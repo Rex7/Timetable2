@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Vip extends AppCompatActivity {
-    Button btnadd,btnip,report;
+    Button btnadd,btnip,buttoback2,report;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +17,22 @@ public class Vip extends AppCompatActivity {
         btnadd=(Button) findViewById(R.id.btnadd);
         btnip=(Button) findViewById(R.id.btnip);
         report=(Button) findViewById(R.id.report);
+        buttoback2=(Button) findViewById(R.id.buttoback2);
 
         btnip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Vip.this,Enroll.class);
                 startActivity(i);
+            }
+        });
+        buttoback2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.buttoback2) {
+                    Intent intent = new Intent(Vip.this, MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
         btnadd.setOnClickListener(new View.OnClickListener() {

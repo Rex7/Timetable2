@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/btnint"
         android:layout_alignTop="@+id/btnven"
+        android:background="@drawable/rounded_button"
         android:text="student"
         tools:layout_editor_absoluteX="88dp"
-        android:background="@drawable/rounded_button"
         tools:layout_editor_absoluteY="93dp" />
 
     <Button
@@ -24,8 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/btnven"
         android:layout_centerVertical="true"
-        android:text="External"
         android:background="@drawable/rounded_button"
+        android:text="External"
 
         tools:layout_editor_absoluteX="210dp"
         tools:layout_editor_absoluteY="93dp" />
@@ -37,8 +37,8 @@
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:layout_marginStart="96dp"
-        android:text="Internal"
         android:background="@drawable/rounded_button"
+        android:text="Internal"
 
         tools:layout_editor_absoluteX="88dp"
         tools:layout_editor_absoluteY="209dp" />
@@ -62,9 +62,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="128dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="123dp"
+        android:layout_marginEnd="136dp"
         android:background="@drawable/rounded_button"
         android:text="subject" />
+
+    <Button
+        android:id="@+id/buttoback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="21dp"
+        android:text="Back" />
 
 </RelativeLayout>

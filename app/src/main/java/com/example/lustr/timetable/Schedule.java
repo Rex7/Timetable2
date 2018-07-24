@@ -13,10 +13,12 @@ import java.util.Random;
 
 
 public class Schedule extends AppCompatActivity {
-    Button btnsched;
+    Button btnsched,report;
     SQLiteDatabase db;
+
     Cursor cs;
     String[][] sc = new String[11][31];
+    String[] sc1 = new String[30];
     String[][] ex = new String[2][30];
     String[][] es = new String[2][30];
     String[][] ve = new String[3][20];
@@ -38,6 +40,17 @@ public class Schedule extends AppCompatActivity {
         db = openOrCreateDatabase(DatabaseHelper.DATABASE_NAME, MODE_PRIVATE, null);
         btnsched = (Button) findViewById(R.id.btnsce);
 
+        report=findViewById(R.id.report_call);
+        report.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Bundle b=new Bundle();
+        b.putStringArray("sc1",sc1);
+        Intent i=new Intent(Schedule.this,Sche.class);
+        i.putExtras(b);
+        startActivity(i);
+    }
+});
         btnsched.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -205,18 +218,17 @@ public class Schedule extends AppCompatActivity {
 
 
     protected void make() {
-        i = 0;
+        int vl =0;
         cs = db.rawQuery(venue, null);
         if (cs.moveToFirst()) {
             do {
-                ve[0][i] = cs.getString(1);
-                ve[1][i] = cs.getString(2);
-                i = i + 1;
+                ve[0][vl] = cs.getString(1);
+                ve[1][vl] = cs.getString(2);
+                vl = vl + 1;
             } while (cs.moveToNext());
 
         }
         cs.close();
-        int vl = i - 1;
         i = 0;
         j = 0;
         k = 0;
@@ -228,7 +240,7 @@ public class Schedule extends AppCompatActivity {
             cve = sc[0][i];//current date
             if (sc[4][i].equals("oral")) {//oral then class
                 loopjj:
-                while (j <= vl) {
+                while (j < vl) {
                     if (ve[1][j].equals("Class")) {
                         cv = ve[0][j];//current roomno
                         kj = 0;
@@ -236,6 +248,7 @@ public class Schedule extends AppCompatActivity {
                         do {
                             if (kj < i) {
                                 if (cv.equals(sc[6][kj])) {
+                                    Log.e("errr1", String.valueOf(kj));
                                     if (cve.equals(sc[0][kj])) {//sam
                                         break loopkj;
                                     }
@@ -252,7 +265,7 @@ public class Schedule extends AppCompatActivity {
                 }
             } else {
                 loopjj1:
-                while (k <= vl) {
+                while (k < vl) {
                     if (ve[1][k].equals("Lab")) {
                         cv = ve[0][k];//current roomno
                         kk = 0;
@@ -343,14 +356,38 @@ public class Schedule extends AppCompatActivity {
             ishuffle();
         }
     }
+        String ss2,ss4;
+        int sls1,sls2;
         for(i=0;i<30;i++){
-            Log.i("jam123", "subject +" + sc[2][i]);
-            Log.i("jam12", "marks +" + sc[4][i]);
-            Log.i("jam12", "po +" + sc[5][i]);
-            Log.i("jam1236", "venue +" + sc[0][i]+sc[7][i]);
-            Log.i("jam1235", "iid +" + sc[7][i]);
+
             Log.i("jamsch", sc[0][i]+"++" +sc[1][i]+ "++" +
             sc[2][i]+"++" + sc[3][i]+"++" + sc[4][i]+"++" +sc[5][i]+"++" +sc[6][i]+"++" +sc[7][i]);
+            ss2=sc[2][i];
+            //sls1=ss2.length();
+            switch(ss2){
+                case "os": ss2=ss2+"     ";//6
+                            break;
+                case "mcc": ss2=ss2+" ";//2
+                    break;
+                case "coa": ss2=ss2+"   ";//4
+                    break;
+                case "npl": ss2=ss2+"    ";//5
+                    break;
+                case "spcc": break;
+
+            }
+
+            ss4=sc[4][i];
+            sls2=ss4.length();
+            if(sls2<8) {
+                while (sls2 < 12) {
+                    ss4 = ss4 + "  ";
+                    sls2 = ss4.length();
+                }
+            }
+
+
+            sc1[i]=sc[0][i]+"|"+sc[1][i]+"|"+ss2+"|"+sc[3][i]+"|"+ss4+"|"+sc[5][i]+"|"+sc[6][i]+"|"+sc[7][i]+"|";
         }
 
 

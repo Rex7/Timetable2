@@ -46,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(i);
                         } else {
                             Toast.makeText(getApplicationContext(), "Login error", Toast.LENGTH_SHORT).show();
-                            Intent i=new Intent(MainActivity.this,Vip.class);
-                            startActivity(i);
+
                         }
                         }
 

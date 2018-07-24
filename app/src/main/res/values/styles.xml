@@ -6,6 +6,11 @@
         <item name="colorPrimary">#06088b</item>
         <item name="colorPrimaryDark">#082eb9</item>
         <item name="colorAccent">#0413a1</item>
+        <item name="colorButtonNormal">@color/buttonColor</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button.Custom</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Button.Custom">
+        <item name="android:textColor">@color/mycustomcolor</item>
     </style>
 
 </resources>
